@@ -1,0 +1,87 @@
+h1, h2, h3, h4, h4, h6, p {
+  padding: 0;
+  margin: 0; }
+
+* {
+  text-transform: uppercase; }
+
+body {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-color: #dedcd0;
+  font-family: 'Roboto Slab', serif;
+  color: #746c45; }
+
+.grid {
+  width: 960px;
+  background-color: #f0e7bd;
+  padding: 0 10px;
+  display: grid;
+  grid-template-areas: "h1 h1 h1 h1 h1" "desc desc copy copy copy" "bd bd bd bd bd" "h h h h h" "sd sd sd xsd xsd" "dop dop dop xsd xsd" "f f f f f";
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px; }
+
+#h1 {
+  grid-area: h1;
+  font-size: 48px; }
+
+#desc {
+  grid-area: desc;
+  display: flex;
+  align-content: center; }
+
+#copy {
+  grid-area: copy;
+  font-size: 12px;
+  display: flex;
+  align-items: flex-end; }
+
+#bd {
+  grid-area: bd; }
+  #bd img {
+    width: 100%;
+    border-radius: 10px; }
+
+#dop {
+  grid-area: dop;
+  background-color: #f3f2ed; }
+
+#sd {
+  display: grid;
+  grid-area: sd;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  height: 100%; }
+
+#h-line {
+  grid-area: h;
+  display: flex;
+  justify-content: space-between; }
+
+.sd {
+  text-align: center; }
+  .sd img {
+    width: 100%;
+    border-radius: 10px; }
+
+#xsd {
+  grid-area: xsd;
+  display: grid;
+  grid-gap: 5px; }
+
+.xsd {
+  background-color: #f3f2ed;
+  border-radius: 10px;
+  display: flex;
+  align-content: center;
+  padding: 10px;
+  font-weight: lighter; }
+
+footer {
+  grid-area: f;
+  text-align: center;
+  padding: 5px 0;
+  margin: 0; }
+
+/*# sourceMappingURL=style.css.map */
